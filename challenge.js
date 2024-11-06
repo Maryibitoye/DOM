@@ -9,3 +9,9 @@ clickBtn.addEventListener("click", () => {
   giftBox.classList.toggle("hide");
 });
 
+document.addEventListener("keydown" , (e) => {
+    console.log(e.ctrlKey , e.key);
+    if (e.key === "y" && e.ctrlKey) {
+giftBox.classList.toggle("hide");
+ }
+});
